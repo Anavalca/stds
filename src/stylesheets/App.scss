@@ -3,10 +3,15 @@
 @import './layouts/gif';
 
 body {
-    background-color: #89b0ae;
+    background-color: #d6693b;
     color: white;
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    #map{
+        width: 70%;
+        height: 600px;
+    }
     
 }
