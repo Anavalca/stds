@@ -5,16 +5,18 @@ export default function Maps() {
     const position = [37.798242, -3.782315]
     
     return (
-      <Map center={position} zoom={13}>
-        <TileLayer
-          attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+      <div className='MapContainer'> 
+        <Map center={position} zoom={16.5}>
+          <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-        <Marker position={position}>
-          <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
-          </Popup>
-        </Marker>
-      </Map>
+          <Marker position={position}>
+            <Popup>
+              STDS Pinturas
+            </Popup>
+          </Marker>
+        </Map>
+      </div>
     )
 }

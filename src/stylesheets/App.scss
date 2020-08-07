@@ -2,16 +2,18 @@
 @import './utils/mixins';
 @import './layouts/gif';
 
-body {
+#root {
     background-color: #d6693b;
     color: white;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-    #map{
-        width: 70%;
-        height: 600px;
-    }
+  
+    .MapContainer{
+        width: 80%;
+        height: 20%;
     
+        .leaflet-container{
+            width: 100%;
+            height: 600px;
+        }
+    }
 }
+
